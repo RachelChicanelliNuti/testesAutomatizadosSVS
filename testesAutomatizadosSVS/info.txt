@@ -1,0 +1,26 @@
+Pacotes que devem ser instalados:
+
+NewtonSoft_Json
+NUnit
+Selenium.Firefox.WebDriver  //se for no Firefox
+Selenium.Chrome.WebDriver   //se for no Chrome
+Selenium.WebDriver
+SpecFlow
+SpecFlow.NUnit
+NUnit3TestAdapter
+
+
+
+Ver esse video:
+https://www.youtube.com/watch?v=LG_0SEeCwh0
+
+ITextSharp:
+https://www.youtube.com/watch?v=owQ8Xj6gGvg
+
+
+http://www.devmedia.com.br/geracao-de-relatorios-de-teste-com-o-selenium-evidence/33994
+
+
+Gerar relatório com gráfico:
+
+http://qualidadedesoftware.com.br/2011/01/19/relatorio-grafico-selenium-testng/2011/
