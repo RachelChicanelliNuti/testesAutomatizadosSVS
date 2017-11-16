@@ -12,7 +12,7 @@ Esquema do Cenário: Autenticação com sucesso
 
 	Exemplos:
 	| cpf           | senha        | mensagem             |
-	| '11111111111' | '1111111111' | 'selecione o perfil' |
+	| '11111111111' | '0000000000' | 'senha errada'      |
 	| '22222222222' | '2222222222' | ''                   |
 	| '99999999999' | ''           | 'Senha obrigatório'  |
 	| ''            | '1111111111' | 'CPF obrigatório'    |

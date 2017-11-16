@@ -66,7 +66,7 @@ namespace testesAutomatizadosSVS.Autenticacao
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Autenticação com sucesso")]
-        [NUnit.Framework.TestCaseAttribute("\'11111111111\'", "\'1111111111\'", "\'selecione o perfil\'", null)]
+        [NUnit.Framework.TestCaseAttribute("\'11111111111\'", "\'0000000000\'", "\'senha errada\'", null)]
         [NUnit.Framework.TestCaseAttribute("\'22222222222\'", "\'2222222222\'", "\'\'", null)]
         [NUnit.Framework.TestCaseAttribute("\'99999999999\'", "\'\'", "\'Senha obrigatório\'", null)]
         [NUnit.Framework.TestCaseAttribute("\'\'", "\'1111111111\'", "\'CPF obrigatório\'", null)]
