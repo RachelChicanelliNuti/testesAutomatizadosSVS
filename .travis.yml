@@ -1,0 +1,14 @@
+language: csharp
+solution: testesAutomatizadosSVS.sln
+before_install:
+  - sudo apt-get install nunit-console
+before_script:
+  - nuget restore testesAutomatizadosSVS.sln
+script:
+  - travis_retry nuget restore -source "https://www.nuget.org/api/v2"  testesAutomatizadosSVS.sln
+  - xbuild testesAutomatizadosSVS.sln
+after_script:
+  - nunit-console testesAutomatizadosSVS/bin/Debug/testesAutomatizadosSVS.dll 
+notifications:
+  email: false
+  slack: projetoses:AmNLeFKCojI0WD926375XqEu
