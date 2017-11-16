@@ -121,6 +121,8 @@
     <Content Include="bin\Debug\System.Xml.XDocument.dll" />
     <Content Include="bin\Debug\System.Xml.XmlDocument.dll" />
     <Content Include="bin\Debug\System.Xml.XmlSerializer.dll" />
+    <Content Include="bin\Debug\testesAutomatizadosSVS.dll" />
+    <Content Include="bin\Debug\testesAutomatizadosSVS.pdb" />
     <Content Include="bin\Debug\WebDriver.xml" />
     <Content Include="info.txt" />
   </ItemGroup>
