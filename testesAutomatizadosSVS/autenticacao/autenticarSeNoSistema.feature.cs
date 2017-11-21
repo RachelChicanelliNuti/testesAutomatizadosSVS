@@ -19,6 +19,7 @@ namespace testesAutomatizadosSVS.Autenticacao
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
     [NUnit.Framework.DescriptionAttribute("Autenticação no sistema")]
+    [NUnit.Framework.CategoryAttribute("login")]
     public partial class AutenticacaoNoSistemaFeature
     {
         
@@ -32,7 +33,8 @@ namespace testesAutomatizadosSVS.Autenticacao
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("pt-BR"), "Autenticação no sistema", "Para acessar tela de escolha de módulo\r\nEnquanto usuário\r\nEu gostaria de me auten" +
-                    "ticar no sistema e escolher o perfil", ProgrammingLanguage.CSharp, ((string[])(null)));
+                    "ticar no sistema e escolher o perfil", ProgrammingLanguage.CSharp, new string[] {
+                        "login"});
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -73,17 +75,17 @@ namespace testesAutomatizadosSVS.Autenticacao
         public virtual void AutenticacaoComSucesso(string cpf, string senha, string mensagem, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Autenticação com sucesso", exampleTags);
-#line 6
-this.ScenarioSetup(scenarioInfo);
-#line 7
- testRunner.Given("que estou na página de autenticacao", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line 8
- testRunner.When(string.Format("eu preencho o campo CPF com o valor {0}", cpf), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+this.ScenarioSetup(scenarioInfo);
 #line 9
- testRunner.And(string.Format("preencha o campo Senha com o valor {0}", senha), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.Given("que estou na página de autenticacao", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line 10
- testRunner.When("clico no botão Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+ testRunner.When(string.Format("eu preencho o campo CPF com o valor {0}", cpf), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line 11
+ testRunner.And(string.Format("preencha o campo Senha com o valor {0}", senha), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line 12
+ testRunner.When("clico no botão Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line 13
  testRunner.Then(string.Format("vejo na tela {0}", mensagem), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             this.ScenarioCleanup();
